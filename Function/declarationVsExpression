@@ -1,0 +1,36 @@
+FUNCTION DECLARATION
+
+1.lebih fleksibel (dapat ditulis dimanapun)
+  a.karena konsep hoisting
+2.Mudah dipahami pemula
+
+//contoh 1 kode berjalan
+function tampilPesan (nama) {
+  alert('halo' + nama);
+}
+tampilPesan('Akbar');
+
+//contoh 2 kode berjalan
+tampilPesan('Akbar');
+function tampilPesan (nama) {
+  alert('halo' + nama);
+}
+
+FUNCTION EXPRESSION
+1.Harus didefinisikan terlebih dahulu sebelum dipanggil
+2.Lebih powerfull:
+  a. Sebagai closure
+  b. Sebagai argumen untuk function lain
+  c. IIFE (Immerdiately Invoked Function Expression)
+
+//Contoh 1 Kode berjalan
+var tampilPesan = function (nama) {
+  alert('halo' + nama);
+}
+tampilPesan('Akbar');
+
+//Contoh 2 Kode Tidak Berjalan
+tampilPesan('Akbar');
+var tampilPesan = function (nama) {
+  alert('halo' + nama);
+}
