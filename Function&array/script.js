@@ -57,7 +57,7 @@ var hapusPenumpang = function(namaPenumpang, penumpang){
             else if ( i == penumpang.length - 1) {
                 //tampilkan pesan kesalahannya
                 console.log(namaPenumpang + ' tidak ada di dalam');
-                //kembalikan isi array & keluar dari function
+                //kembalikan isi array dan keluar dari function
                 return namaPenumpang;
             }
         } 
